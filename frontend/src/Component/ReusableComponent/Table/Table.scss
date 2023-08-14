@@ -1,0 +1,73 @@
+@import "../Styles/variable.scss";
+
+$border:$defaultWhite;
+$headerBgColor:$defaultBlue;
+$headerColor:$defaultWhite;
+$bodyColor:$defaultGray;
+$active:$defaultWhite;
+$selectedBgColor:$defaultLightBlue;
+$selectedColor:$defaultWhite;
+
+
+$black:$defaultBlack;
+$blue:$defaultBlue;
+$gray:$defaultGray;
+
+.t-container{
+  height: 530px;
+  position: relative;
+  // height: 100%;;
+  overflow: auto;
+  table{
+    width:100%;
+    border-collapse: separate;
+    border:solid 1px $border;
+    // height: 100%;
+    tr{
+      background-color: $gray;
+    }
+    th{
+      font-size: 36px;
+      font-family:sans-serif;
+      font-weight: 400;
+      border:solid 1px $border;
+      color:$headerColor;
+      background-color: $headerBgColor;
+      padding: 2px;
+      height: 74px;
+      position: sticky;
+      top:0px;
+    }
+
+    
+    td{
+      font-size: 32px;
+      font-family:sans-serif;
+      font-weight: 400;
+      border:solid 1px $border;
+      padding: 5px 20px;
+      height:60px;
+    }
+    td[id='td-2']{
+      width:60%;
+    }
+    td[id='td-1']{
+      width:10%;
+    }
+    td[id='td-3']{
+      width:30%;
+    }
+
+    tr:active{
+      background-color: $active;
+    }
+
+    .selected{
+      background-color: $selectedBgColor;
+      color:$selectedColor
+    }
+    
+  }
+    // padding:100px;
+}
+

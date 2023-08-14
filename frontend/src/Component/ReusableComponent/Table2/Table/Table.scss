@@ -1,0 +1,34 @@
+
+
+/* Table CSS*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 3vh;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.selected {
+    background-color: #888 !important;
+    color: white;
+}
+
+thead .currencyTableHeader{
+    background-color: #00718F;
+    color:#ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+tbody td{
+    cursor: pointer;
+    text-align: left;
+}

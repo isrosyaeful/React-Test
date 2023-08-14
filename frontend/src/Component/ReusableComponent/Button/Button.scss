@@ -1,0 +1,29 @@
+@import "../../ReusableComponent/Styles/variable";
+
+$textColor:$defaultWhite;
+$defaultColor:$defaultBlue;
+$selectedColor:$defaultLightBlue;
+$border:none;
+
+.common-button{
+    display: flex;
+    margin:0 50px;
+    height: 40px;
+    width: 150px;
+
+    font-size: 24px;
+    font-weight: 500;
+    // padding: 4px;
+    background-color: $defaultColor;
+    color:$textColor;
+    border-radius: 10px;
+    border:$border;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      background-color: $selectedColor;
+    }
+}

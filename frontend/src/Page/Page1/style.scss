@@ -1,0 +1,21 @@
+.page1-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    overflow: auto;
+
+    &__req {
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__timer {
+        min-width: auto;
+        width: 300px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}

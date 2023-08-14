@@ -1,0 +1,23 @@
+@import "../../../../Component/ReusableComponent/Styles/variable";
+.lcp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    .lcp-title{
+        background-color: $defaultBlue;
+        align-items: center;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 48px;
+        height: 48px;
+    }
+    .lcp-chart{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+        width: calc(100% - 48px);
+        height: calc(100% - 68px);
+    }
+}
